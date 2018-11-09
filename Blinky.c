@@ -25,6 +25,7 @@ osThreadId tid_lcd;                     /* Thread id of thread: lcd          */
 #define LED_D   3
 #define LED_CLK 7
 
+#define LED_M 	4
 #define LED_G   3
 /*----------------------------------------------------------------------------
  *      Switch LED on

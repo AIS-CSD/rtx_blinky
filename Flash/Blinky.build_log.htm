@@ -21,41 +21,15 @@ Target DLL:      UL2CM3.DLL V1.160.3.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-C:\workdir\RTX_Blinky\Blinky.uvprojx
+C:\Users\BIRD_HW\Downloads\apnt_279\RTX_Blinky\Blinky.uvprojx
 Project File Date:  11/09/2018
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'LPC1857 Flash'
-compiling LED_MCB1800.c...
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(51): error:  #20: identifier "GPIO_ID" is undefined
-  const GPIO_ID LED_GPIO[] = {
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(63): error:  #20: identifier "PIN_ID" is undefined
-  const PIN_ID LED_PIN[] = {
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(64): error:  #20: identifier "SCU_CFG_MODE_FUNC4" is undefined
-    { 13, 10, (SCU_CFG_MODE_FUNC4 | SCU_PIN_CFG_PULLDOWN_EN)},
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(64): error:  #20: identifier "SCU_PIN_CFG_PULLDOWN_EN" is undefined
-    { 13, 10, (SCU_CFG_MODE_FUNC4 | SCU_PIN_CFG_PULLDOWN_EN)},
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(69): error:  #20: identifier "SCU_CFG_MODE_FUNC0" is undefined
-    {  9,  0, (SCU_CFG_MODE_FUNC0 | SCU_PIN_CFG_PULLDOWN_EN)},
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(86): warning:  #223-D: function "GPIO_PortClock" declared implicitly
-    GPIO_PortClock     (1);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(90): warning:  #223-D: function "SCU_PinConfigure" declared implicitly
-      SCU_PinConfigure (LED_PIN[n].port,  LED_PIN[n].num,  LED_PIN[n].config_val);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(91): warning:  #223-D: function "GPIO_SetDir" declared implicitly
-      GPIO_SetDir      (LED_GPIO[n].port, LED_GPIO[n].num, GPIO_DIR_OUTPUT);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(91): error:  #20: identifier "GPIO_DIR_OUTPUT" is undefined
-      GPIO_SetDir      (LED_GPIO[n].port, LED_GPIO[n].num, GPIO_DIR_OUTPUT);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(92): warning:  #223-D: function "GPIO_PinWrite" declared implicitly
-      GPIO_PinWrite    (LED_GPIO[n].port, LED_GPIO[n].num, 0);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(109): warning:  #223-D: function "SCU_PinConfigure" declared implicitly
-      SCU_PinConfigure (LED_PIN[n].port,  LED_PIN[n].num,  0);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(126): warning:  #223-D: function "GPIO_PinWrite" declared implicitly
-      GPIO_PinWrite     (LED_GPIO[num].port, LED_GPIO[num].num, 1);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c(147): warning:  #223-D: function "GPIO_PinWrite" declared implicitly
-      GPIO_PinWrite     (LED_GPIO[num].port, LED_GPIO [num].num, 0);
-C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Boards\Keil\MCB1800\Common\LED_MCB1800.c: 7 warnings, 6 errors
-".\Flash\Blinky.axf" - 6 Error(s), 7 Warning(s).
+Rebuild target 'LPC1857 Flash'
+Error instantiating RTE components
+Error #541: '::Board Support:LED:1.00' API is missing (previously found in pack 'Keil.MDK-Middleware')
+Error #542: API '::Board Support.LED:1.0.0(API)' required by component 'Keil.MCB1800::Board Support:LED:1.0.0' is missing
 
 <h2>Software Packages used:</h2>
 
@@ -76,12 +50,6 @@ Package Vendor: Keil
    * Component: GPIO Version: 1.0.0
    * Component: LED Version: 1.0.0
 
-Package Vendor: Keil
-                http://www.keil.com/pack/Keil.MDK-Middleware.7.7.0.pack
-                Keil.MDK-Middleware.7.7.0
-                Middleware for Keil MDK-Professional and MDK-Plus
-   * Component: LED Version: 1.0.0
-
 <h2>Collection of Component include folders:</h2>
   .\RTE\Device\LPC1857
   .\RTE\_LPC1857_Flash
@@ -89,49 +57,45 @@ Package Vendor: Keil
   C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\RTOS\RTX\INC
   C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\Device\Include
   C:\Keil_v5\ARM\PACK\Keil\LPC1800_DFP\2.9.0\RTE_Driver
-  C:\Keil_v5\ARM\PACK\Keil\MDK-Middleware\7.7.0\Board
 
 <h2>Collection of Component Files used:</h2>
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_LPC18xx.c
       Source file:   Device\Source\ARM\startup_LPC18xx.s
+      Source file:   Device\Source\system_LPC18xx.c
       Include file:  RTE_Driver\Config\RTE_Device.h
 
    * Component: Keil::Device:SCU:1.1.0
-      Source file:   RTE_Driver\SCU_LPC18xx.c
       Include file:  RTE_Driver\SCU_LPC18xx.h
+      Source file:   RTE_Driver\SCU_LPC18xx.c
 
    * Component: Keil::Device:GPIO:1.0.0
-      Source file:   RTE_Driver\GPIO_LPC18xx.c
       Include file:  RTE_Driver\GPIO_LPC18xx.h
+      Source file:   RTE_Driver\GPIO_LPC18xx.c
 
    * Component: Keil.MCB1800::Board Support:LED:1.0.0
       Source file:   Boards\Keil\MCB1800\Common\LED_MCB1800.c
 
    * Component: ARM::CMSIS:RTOS:Keil RTX:4.81.1
-      Source file:   CMSIS\RTOS\RTX\Templates\RTX_Conf_CM.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MailQueue.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Timer.c
-      Source file:   CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s
-      Include file:  CMSIS\RTOS\RTX\UserCodeTemplates\osObjects.h
       Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Semaphore.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Mutex.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Thread.c
       Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\main.c
-      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MsgQueue.c
-      Include file:  CMSIS\RTOS\RTX\INC\cmsis_os.h
+      Source file:   CMSIS\RTOS\RTX\Templates\RTX_Conf_CM.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Timer.c
+      Include file:  CMSIS\RTOS\RTX\UserCodeTemplates\osObjects.h
       Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MemPool.c
+      Include file:  CMSIS\RTOS\RTX\INC\cmsis_os.h
+      Source file:   CMSIS\RTOS\RTX\SRC\ARM\SVC_Table.s
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MailQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\MsgQueue.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Thread.c
+      Source file:   CMSIS\RTOS\RTX\UserCodeTemplates\Mutex.c
       Library file:  CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib
 
    * Component: ARM::CMSIS:CORE:5.1.2
 
    * Component: ::CMSIS:RTOS:1.0.0 (API)
-
-   * Component: ::Board Support:LED:1.0.0 (API)
-      Include file:  Board\Board_LED.h
 Target not created.
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>
